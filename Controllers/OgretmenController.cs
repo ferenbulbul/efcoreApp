@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using efcoreApp.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -100,6 +101,9 @@ namespace efcoreApp.Controllers
             _context.Ogretmenler.Remove(ogretmn);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+        public class IActionResults (){
+
         }
    }
 }
