@@ -1,0 +1,9 @@
+@model Ogretmen
+<form asp-action="Delete" method="post">
+    <input type="text" asp-for="OgretmenId" >
+    <div>
+        <h2>@Model.Ad isimli öğretmeni silmek istiyor musunuz ?</h2>
+    </div>
+    <button class="btn btn-danger" type="submit">Evet</button>
+    <a asp-action="Index" class="btn btn-primary">Hayır</a>
+</form>
