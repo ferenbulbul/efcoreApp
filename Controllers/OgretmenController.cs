@@ -102,8 +102,6 @@ namespace efcoreApp.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-        public class IActionResults (){
-
-        }
+        
    }
 }
